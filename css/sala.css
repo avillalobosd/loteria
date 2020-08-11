@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  .full-height {
+    height: 100%;
+    background: yellow;
+  }
+
+  .chat{
+      margin: 0;
+      background-color: white;
+  }
+
+  .usuarios{
+      margin:0;
+      background-color: white;
+  }
+
+  #inputChat{
+      height:70%;
+      width: 100%;
+      
+  }
+
+
+  #inputChat2{
+    position:absolute;
+    /* width: 100%; */
+    /* height: 100%; */
+    background: white;
+    left: 100%;
+    top: 35%;
+    /* transform: translate(-50%, -50%); */
+    border: 3px solid white;
+    /* display: table;  should be block */
+    /* overflow: auto added */
+  }
+
+  #mensajesChat2{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    border: 3px solid white;
+    /* display: table;  should be block */
+    overflow: auto /* added */
+  }
+
+
+  #mensajesChat{
+    height:500px;
+    width: 100%;
+    overflow:auto;
+    background-color: white;
+    
+}
+
+  
+  
