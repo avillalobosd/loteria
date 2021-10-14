@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.css" />
+    <script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyDwTNGdcPXSGMdEDd5c_JbWDSIBkQX8a8s",
+    authDomain: "loteria-a7d3c.firebaseapp.com",
+    databaseURL: "https://loteria-a7d3c.firebaseio.com",
+    projectId: "loteria-a7d3c",
+    storageBucket: "loteria-a7d3c.appspot.com",
+    messagingSenderId: "273374527121",
+    appId: "1:273374527121:web:959e61a6b7483266228930",
+    measurementId: "G-F7NVBPL9DJ"
+  };
+  firebase.initializeApp(config);
+    </script>
+</head>
+<body>
+
+
+    <div id="login-ui"></div>
+</body>
+<script>
+
+    // FirebaseUI config.
+    initApp = function() {
+                  firebase.auth().onAuthStateChanged(function(user) {
+                    if (user) {
+              window.location.href='profile.html';
+
+
+                    } else {
+                        var uiConfig = {
+        signInSuccessUrl: 'profile.html',
+        signInOptions: [
+          // Leave the lines as is for the providers you want to offer your users.
+          //firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+          firebase.auth.EmailAuthProvider.PROVIDER_ID,
+          
+        ],
+        // Terms of service url.
+        tosUrl: 'http://pruebas.abecode.com/tos.html'
+      };
+
+      // Initialize the FirebaseUI Widget using Firebase.
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      // The start method will wait until the DOM is loaded.
+      ui.start('#login-ui', uiConfig);
+                    }
+                  }, function(error) {
+                    console.log(error);
+                  });
+                };
+          
+                window.addEventListener('load', function() {
+                  initApp()
+                });
+
+
+</script>
+
+</html>

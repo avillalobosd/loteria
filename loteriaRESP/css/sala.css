@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  .full-height {
+    height: 100%;
+    background: yellow;
+  }
+
+  .chat{
+      margin: 0;
+      background-color: white;
+  }
+
+  .usuarios{
+      margin:0;
+      background-color: white;
+  }
+
+  #inputChat{
+      height:70%;
+      width: 100%;
+      
+  }
+
+
+  #inputChat2{
+    position:absolute;
+    /* width: 100%; */
+    /* height: 100%; */
+    background: white;
+    left: 100%;
+    top: 35%;
+    /* transform: translate(-50%, -50%); */
+    border: 3px solid white;
+    /* display: table;  should be block */
+    /* overflow: auto added */
+  }
+
+
+  #mensajesChat{
+    height:500px;
+    width: 100%;
+    overflow:auto;
+    background-color: white;
+    padding-left:40px;
+    padding-right:40px;
+    
+}
+
+.listaUsuarios{
+  font-size: 15px  ;
+}
+
+.chatReceiver{
+  background-color:#f1f0f0;
+  /* overflow: auto; */
+  border-radius: 10px; 
+  /* margin: 2em 1em; */
+  /* padding: 1em 0; */
+  text-align:left;
+  color:black;
+}
+
+.chatSender{
+/* width:"50%"; */
+background-color:#0099ff;
+/* overflow: auto; */
+border-radius: 10px; 
+/* margin: 2em 1em; */
+/* padding: 1em 0; */
+text-align:right;
+margin-top:10px;
+color:white;
+}
+
+.chatReceiverID{
+  background-color:white;
+  /* overflow: auto; */
+  border-radius: 5px; 
+  /* margin: 2em 1em; */
+  /* padding: 1em 0; */
+  text-align:left;
+  font-size: small;
+  font-weight: 600;
+  color:#90949c;
+}
+
+
+/* .modal-dialog {
+  top: calc(100% - 300px); 
+} */
+  

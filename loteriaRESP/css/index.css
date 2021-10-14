@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(185, 240, 34);
+}
+
+#center {
+    position: absolute;
+    /* width: 300px; */
+    height: 200px;
+    z-index: 15;
+    top: 40%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+    /* background: red; */
+  }
+
+#inputSala{
+    /* width: 2rem; */
+    /* width:50%; */
+    height: 4rem;
+    line-height: 2.375rem;
+    text-align: center;
+    /* max-width: 30rem; */
+    /* min-width: 6.25rem; */
+    color: rgb(51, 51, 51);
+    font-size: 2rem;
+    outline: none;
+    border-style: solid;
+    border-color: gold;
+    font-weight: 700;
+}
+
+
+
+  #btnEntrar{
+    height: 4rem;
+      width:100%;
+      font-size: 2rem;
+      margin-top: 10px;
+      background-color: black;
+      border-style: solid;
+      border-color: gold;
+      /* text-align: center; */
+      /* align-items: center; */
+  }
+
+  
+  #btnCrear{
+    height: 4rem;
+      width:100%;
+      font-size: 2rem;
+      margin-top: 10px;
+     background-color: indigo;
+      border-style: solid;
+      border-color: gold;
+      /* text-align: center; */
+      /* align-items: center; */
+  }
+
+  .nombre{
+    font-family: 'Wendy One', sans-serif;
+    font-size: 80px;
+    text-align: center;
+  }
+
